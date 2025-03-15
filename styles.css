@@ -1,0 +1,159 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.subtitle {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 50;
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Ensure the top bar is above the background image */
+}
+
+.top-bar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11; /* Ensure the centered image is above the top bar */
+}
+
+.centered-image img {
+    max-width: 30%;
+    height: auto;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('images/B&L_Strepen-Geel_20250307.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 60px; /* Adjust padding to account for the top bar height */
+}
+
+.background-image2 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-image: url('images/B&L_Illustratie-STD_20250307.svg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 80%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* padding: 20px; */
+    /*padding-top: 60px; /* Adjust padding to account for the top bar height */
+}
+
+.container {
+    flex: 1;
+    margin: 10px;
+    z-index: 1;
+    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.75);
+    /* opacity: 0.75; */
+    border-radius: 25px;
+    text-align: center;
+}
+
+a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    /* color: #E52326; */
+    background-color: #FDC41F;
+    text-decoration: none;
+    /* size: 100%; */
+}
+
+
+#countdown {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.cards {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.card {
+    display: flex;            /* Enables flexbox */
+    align-items: center;      /* Centers items vertically */
+    gap: 20px;               /* Adds space between the icon and text */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.card-content {
+    flex: 1;                 /* Takes up remaining space */
+    display: flex;
+    flex-direction: column;  /* Stack header & paragraph */
+    justify-content: center; /* Centers content vertically */
+}
+
+.card-content h2 {
+    margin: 0;
+}
+
+.card-content p {
+    margin: 5px 0 0;
+}
+
+
+.present-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.present-button:hover {
+    transform: scale(1.1);
+    background-color: #e84118;
+}
